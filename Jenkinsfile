@@ -29,7 +29,7 @@ usernameVariable: 'DOCKER_USERNAME',
 passwordVariable: 'DOCKER_PASSWORD'
 )
 ]) {
-bat 'echo %DOCKER_PASSWORD% | docker login -u %DOCKER_USERNAME% --password-stdin docker.io'
+bat 'echo %DOCKER_PASSWORD% | docker login -u priyanka564 --password-stdin docker.io'
 bat 'docker push %DOCKER_BFLASK_IMAGE%'
 }
 }
