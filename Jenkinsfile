@@ -3,7 +3,7 @@ agent any
 
 environment {
  DOCKER_BFLASK_IMAGE = 'priyanka564/myjava1:latest' // Your Docker image tag
- DOCKER_REGISTRY_CREDS = 'ab6f86f7-2051-4855-97a5-035dfb72f48a' // Your credentials ID
+ DOCKER_REGISTRY_CREDS = '' // Your credentials ID
 }
 
 stages {
