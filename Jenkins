@@ -10,7 +10,7 @@ stages {
 stage('Build') {
 steps {
 bat 'docker build -t myjava1 .'
-bat 'docker tag javaa %DOCKER_BFLASK_IMAGE%'
+bat 'docker tag myjava1 %DOCKER_BFLASK_IMAGE%'
 }
 }
 
