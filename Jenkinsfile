@@ -24,7 +24,7 @@ stage('Deploy') {
 steps {
 withCredentials([
 usernamePassword(
-credentialsId: "${DOCKER_REGISTRY_CREDS}",
+credentialsId: "%{DOCKER_REGISTRY_CREDS}",
 usernameVariable: 'DOCKER_USERNAME',
 passwordVariable: 'DOCKER_PASSWORD'
 )
