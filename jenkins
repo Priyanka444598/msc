@@ -2,21 +2,21 @@ pipeline {
 agent any
 
 environment {
- DOCKER_BFLASK_IMAGE = 'priyanka564/msc:latest' // Your Docker image tag
+ DOCKER_BFLASK_IMAGE = 'priyanka564/myjava1:latest' // Your Docker image tag
  DOCKER_REGISTRY_CREDS = 'ab6f86f7-2051-4855-97a5-035dfb72f48a' // Your credentials ID
 }
 
 stages {
 stage('Build') {
 steps {
-bat 'docker build -t javaa .'
+bat 'docker build -t myjava1 .'
 bat 'docker tag javaa %DOCKER_BFLASK_IMAGE%'
 }
 }
 
 stage('Test') {
 steps {
-bat 'docker run --rm javaa'
+bat 'docker run --rm myjava1'
 }
 }
 
